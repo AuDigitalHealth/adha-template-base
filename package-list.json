@@ -1,0 +1,23 @@
+﻿{
+  "package-id": "adha-template-base",
+  "title": "Base template for FHIR IGs published by the Australian Digital Health Agency",
+  "canonical": "http://ns.electronichealth.net.au/fhir/adha-template-base",
+  "introduction": "This is the ADHA FHIR implementation guide template that adds Australian Digital Health Agency specific branding (like logo, colours, links).",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://github.com/AuDigitalHealth/adha-template-base",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.0.1",
+      "desc": "First draft",
+      "path": "https://github.com/AuDigitalHealth/adha-template-base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2023-04-24"
+    }
+  ]
+}
