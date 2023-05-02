@@ -2,6 +2,10 @@
   background-color: #1E6DB6;
 }
 
+/* the 'on-hover' colour of the navigation bar menu headings */
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #000000;
+}
 #stripe {
   position: absolute;
   left: 0;
