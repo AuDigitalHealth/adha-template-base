@@ -1,0 +1,42 @@
+.navbar-inverse {
+  background-color: #1E6DB6;
+}
+
+#stripe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+  background: #1E6DB6;
+}
+
+#family-nav {
+  line-height: 70px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #808080;
+}
+
+#family-logo {
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  display: block;
+}
+
+#ig-status {
+  line-height: 70px;
+  margin-top: 40px;
+  margin-left: 250px;
+  color: #000000;
+  text-align: center;
+  height: 50px;
+}
+
+#segment-footer {
+  background-color: #1E6DB6;
+}
