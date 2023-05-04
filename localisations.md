@@ -19,10 +19,10 @@ After the existing core template footer, add the following:
 ### c) `/_append.fragment-css.html`
 The Agency CSS is introduced (`content/assets/css/ADHA.css`)
 
-See below for the specific styling localisations.
+See below for the specific styling localisations in `ADHA.css`.
 
 ## 2. ./layouts
-No layouts have been introduced in this template
+No layout localisations have been introduced in this template
 
 ## 3. ./scripts
 No scripts have been introduced in this template
