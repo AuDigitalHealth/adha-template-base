@@ -8,7 +8,7 @@ To the header, add:
 * the image has the alt text of "Visit the Australian Digital Health Website"
 * the image has an associated hyperlink to the Agency home page
 
-#### b) `/_append.fragment-footer.html`
+### b) `/_append.fragment-footer.html`
 After the existing core template footer, add the following:
 * an empty line
 * a line with "Publisher: [Australian Digital Health Agency](https://www.digitalhealth.gov.au) ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000"
@@ -16,7 +16,7 @@ After the existing core template footer, add the following:
 * a line with the ADHA website: "https://www.digitalhealth.gov.au"
 * a line with "[Privacy policy](https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/privacy-policy) | [Terms of Use](https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/terms-of-use)"
 
-#### c) `/_append.fragment-css.html`
+### c) `/_append.fragment-css.html`
 The Agency CSS is introduced (`content/assets/css/ADHA.css`)
 
 See below for the specific styling localisations.
