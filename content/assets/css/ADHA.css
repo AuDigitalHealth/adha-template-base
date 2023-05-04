@@ -10,11 +10,6 @@
 
 /* the thin bar across the page in line with the top of the navigation bar */
 #stripe {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 8px;
   background: #1E6DB6;
 }
 
