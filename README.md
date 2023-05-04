@@ -8,3 +8,6 @@ package id = `adha.template.base`
 
 ## Localisations
 For detailed descriptions of the localisations this template introduces, refer to [localisations](localisations.md).
+
+## Changelog
+Refer to [changelog](CHANGELOG.md)
