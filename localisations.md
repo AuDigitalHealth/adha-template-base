@@ -42,6 +42,31 @@ The CSS file `content/assets/css/ADHA.css` includes the following styling locali
 * setting: `#stripe background`
 * set to the Agency required [`#1E6DB6`](https://www.color-hex.com/color/1e6db6)
 
-### d) abc - tbd
+### d) ADHA logo placement (in `family-nav` div container)
+* setting `#family-logo`
+* float: left
+* margin-top: 20px
+* margin-left: 40px
+* margin-bottom: 20px
+* margin-right: 40px
+* display: block
 
-### e) abc - tbd
+### e) Placement of logo container (`family-nav` div)
+* setting: `#family-nav`
+* line-height: 70px;
+* float: left;
+* margin-top: 4px;
+* margin-bottom: 4px;
+
+### f) Styling of the Implementation Guide title
+* setting: `#ig-status`
+* line-height: 70px;
+* margin-top: 40px;
+* margin-left: 250px;
+* color: #000000;
+* text-align: center;
+* height: 50px;
+
+### g) Styling of the page footer
+* setting: `#segment-footer > .container`
+* set to the Agency required [`#707070`](https://www.color-hex.com/color/707070)
