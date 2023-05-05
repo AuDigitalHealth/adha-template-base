@@ -13,6 +13,7 @@
   background: #1E6DB6;
 }
 
+/* the placement of the 'family-nav' container (that contains the logo) */
 #family-nav {
   line-height: 70px;
   float: left;
@@ -21,6 +22,7 @@
   color: #808080;
 }
 
+/* the placement of the ADHA logo within the 'family-nav' container */
 #family-logo {
   float: left;
   margin-top: 20px;
@@ -30,6 +32,7 @@
   display: block;
 }
 
+/* the styling of the IG title */
 #ig-status {
   line-height: 70px;
   margin-top: 40px;
