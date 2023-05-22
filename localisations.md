@@ -86,7 +86,7 @@ This is the thin bar across the page in line with the top of the navigation bar
 
 #### Colour of the hyperlinks
 * setting: `#publish-box a`
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast (see below for compliance to WCAG)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast matching the hyperlink colour on the public ADHA website (see below for compliance to WCAG)
 
 #### Compliance to WCAG Level 2.1 re colour contrast
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
@@ -97,7 +97,7 @@ This is the thin bar across the page in line with the top of the navigation bar
 #### Colour of the hyperlinks
 This includes hyperlinks in the yellow contents box
 * setting: `#segment-content a`
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast (see below for compliance to WCAG)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast matching the hyperlink colour on the public ADHA website (see below for compliance to WCAG)
 
 #### Compliance to WCAG Level 2.1 re colour contrast
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
