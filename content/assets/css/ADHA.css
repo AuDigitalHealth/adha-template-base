@@ -55,12 +55,12 @@
 /* the colour of the hyperlinks in the main body of text */
 /* includes the hyperlinks in the yellow contents box */
 #segment-content a {
-  color: #0000FF;
+  color: #005ba6;
 }
 
 /* the colour of the hyperlinks in the yellow publish box */
 #publish-box a {
-  color: #0000FF;
+  color: #005ba6;
 }
 
 /* the colour of the footer background */

@@ -86,22 +86,22 @@ This is the thin bar across the page in line with the top of the navigation bar
 
 #### Colour of the hyperlinks
 * setting: `#publish-box a`
-* font colour set to [`#0000FF`](https://www.color-hex.com/color/0000FF), for improved contrast (see below for compliance to WCAG)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast (see below for compliance to WCAG)
 
 #### Compliance to WCAG Level 2.1 re colour contrast
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
-* font colour set to [`#0000FF`](https://www.color-hex.com/color/0000FF), given the background is set to [`#FFEB7E`](https://www.color-hex.com/color/FFEB7E); contrast ratio is [7.13:1](https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFEB7E)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFEB7E`](https://www.color-hex.com/color/FFEB7E); contrast ratio is [5.72:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFEB7E)
 
 ### d) Main body of text
 
 #### Colour of the hyperlinks
 This includes hyperlinks in the yellow contents box
 * setting: `#segment-content a`
-* font colour set to [`#0000FF`](https://www.color-hex.com/color/0000FF), for improved contrast (see below for compliance to WCAG)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast (see below for compliance to WCAG)
 
 #### Compliance to WCAG Level 2.1 re colour contrast
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
-* font colour set to [`#0000FF`](https://www.color-hex.com/color/0000FF), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [8.59:1](https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFFFFF)
+* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [6.89:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFFFFF)
 
 ### e) Footer
 
