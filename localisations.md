@@ -48,7 +48,7 @@ The CSS file `content/assets/css/ADHA.css` includes the following styling locali
 * margin-top: 4px;
 * margin-bottom: 4px;
 
-### b) Styling of the Implementation Guide title
+### b) Implementation Guide title
 * setting: `#ig-status`
 * line-height: 70px;
 * margin-top: 40px;
