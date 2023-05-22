@@ -47,7 +47,11 @@
   height: 50px;
 }
 
-/* the colour of the footer */
+/* the font colour of the nav bar headings */
+.navbar-inverse .navbar-nav > li > a {
+  color:  #FFFFFF;
+}
+
 #segment-footer > .container {
   background-color: #707070;
 }
