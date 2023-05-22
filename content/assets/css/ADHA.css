@@ -1,3 +1,8 @@
+/* the colour of the hyperlinks in the footer */
+:root {
+  --footer-hyperlink-text-color: #F6F9C8;
+}
+
 /* the colour of the top navigation bar */
 .navbar-inverse {
   background-color: #1E6DB6;
