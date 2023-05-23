@@ -67,3 +67,8 @@
 #segment-footer > .container {
   background-color: #707070;
 }
+
+/* render the copy to clipboard buttons visible */
+.copy-text .btn-copy {
+  visibility: visible;
+}

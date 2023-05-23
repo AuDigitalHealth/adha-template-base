@@ -103,6 +103,10 @@ This includes hyperlinks in the yellow contents box
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [6.89:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFFFFF)
 
+#### Copy to clipboard buttons
+Render the copy to clipboard buttons visible
+* setting `.copy-text .btn-copy`
+
 ### e) Footer
 
 #### Footer background colour
