@@ -92,7 +92,18 @@ This is the thin bar across the page in line with the top of the navigation bar
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFEB7E`](https://www.color-hex.com/color/FFEB7E); contrast ratio is [5.72:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFEB7E)
 
-### d) Main body of text
+### f) Canonical information table
+This is the table seen at the top of the page of all resources that includes official URL, status and copyright notices etc.
+
+#### Background colour
+* setting: `table.colsd td`
+* font colour set to [`#ffffe6`](https://www.color-hex.com/color/ffffe6), as found on other IGs such as HL7AU and US Core
+
+#### Visibility of copy to clipboard buttons
+* setting: `.copy-text .btn-copy`
+* set to visible rather than hidden as set by the HL7 base template
+
+### g) Main body of text
 
 #### Colour of the hyperlinks
 This includes hyperlinks in the yellow contents box
@@ -107,7 +118,7 @@ This includes hyperlinks in the yellow contents box
 Render the copy to clipboard buttons visible
 * setting `.copy-text .btn-copy`
 
-### e) Footer
+### h) Footer
 
 #### Footer background colour
 * setting: `#segment-footer > .container`
