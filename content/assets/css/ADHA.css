@@ -72,3 +72,8 @@
 .copy-text .btn-copy {
   visibility: visible;
 }
+
+/* background colour of canonical table at the top of resources */
+table.colsd td {
+	background-color: #ffffe6;
+}
