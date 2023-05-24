@@ -1,4 +1,6 @@
 /* the colour of the hyperlinks in the footer */
+/* NOTE - this is a placeholder value in order to demonstrate the ability to modify this colour */
+/* the value below will likely change once reviewed by ADHA web team experts */
 :root {
   --footer-hyperlink-text-color: #F6F9C8;
 }
