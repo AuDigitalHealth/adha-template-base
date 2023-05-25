@@ -96,3 +96,10 @@
 table.colsd td {
 	background-color: var(--canonical-table-background-color);
 }
+
+/* Override the colour of the table heading numbers on detailed description pages */
+/* Change the heading number to be black instead of grey so that the contrast is optimised for WCAG compliance */
+/* need to use the CSS !important rule as the value for grey is embedded inline and therefore cannot be overridden in CSS unless combined with !important */
+.self-link-parent span {
+  color: var(--full-black) !important;
+}

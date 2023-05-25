@@ -114,7 +114,14 @@ This includes hyperlinks in the yellow contents box
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [6.89:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFFFFF)
 
-### h) Footer
+### h) Detailed descriptions pages
+
+#### Colour of the numbered headings 
+* Change the heading number to be black instead of grey so that the contrast is optimised for WCAG compliance
+* setting `.self-link-parent span`
+* set to black [`#000000`](https://www.color-hex.com/color/000000)
+
+### i) Footer
 
 #### Footer background colour
 * setting: `#segment-footer > .container`
