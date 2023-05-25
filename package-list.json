@@ -7,7 +7,7 @@
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "path": "https://build.fhir.org/ig/AuDigitalHealth/adha.template.base",
       "status": "ci-build",
       "current": true
     },
