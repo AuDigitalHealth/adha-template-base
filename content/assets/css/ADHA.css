@@ -7,7 +7,6 @@
   --full-black: #000000; /* full black for fonts etc*/
   --full-white: #FFFFFF; /* full white for navigation bar fonts */
   --body-hyperlink-color: #005ba6; /* the colour of hyperlinks */
-  --canonical-table-background-color: #ffffe6; /* the colour of the background of the canonical table */
 }
 
 /* the colour of the top navigation bar */
@@ -89,12 +88,6 @@
 /* CSS class="copy-text btn-copy" */
 .copy-text .btn-copy {
   visibility: visible;
-}
-
-/* background colour of canonical table at the top of resources */
-/* CSS selector table.colsd td */
-table.colsd td {
-	background-color: var(--canonical-table-background-color);
 }
 
 /* Override the colour of the table heading numbers on detailed description pages */
