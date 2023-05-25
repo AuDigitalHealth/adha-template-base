@@ -11,21 +11,25 @@
 }
 
 /* the colour of the top navigation bar */
+/* CSS class="navbar-inverse" */
 .navbar-inverse {
   background-color: var(--navbar-background-color);
 }
 
 /* the 'on-hover' colour of the navigation bar menu headings */
+/* CSS class="navbar-inverse navbar-nav" */
 .navbar-inverse .navbar-nav > li > a:hover {
   background-color: var(--full-black);
 }
 
 /* the thin bar across the page in line with the top of the navigation bar */
+/* CSS id="stripe" */
 #stripe {
   background: var(--navbar-background-color);
 }
 
 /* the placement of the 'family-nav' container (that contains the logo) */
+/* CSS id="family-nav" */
 #family-nav {
   line-height: 70px;
   float: left;
@@ -35,6 +39,7 @@
 }
 
 /* the placement of the ADHA logo within the 'family-nav' container */
+/* CSS id="family-logo" */
 #family-logo {
   float: left;
   margin-top: 20px;
@@ -45,6 +50,7 @@
 }
 
 /* the styling of the IG title */
+/* CSS id="ig-status" */
 #ig-status {
   line-height: 70px;
   margin-top: 40px;
@@ -55,32 +61,38 @@
 }
 
 /* the font colour of the nav bar headings */
+/* CSS class="navbar-inverse navbar-nav" */
 .navbar-inverse .navbar-nav > li > a {
   color:  var(--full-white);
 }
 
 /* the colour of the hyperlinks in the main body of text */
 /* includes the hyperlinks in the yellow contents box */
+/* CSS id="segment-content" */
 #segment-content a {
   color: var(--body-hyperlink-color);
 }
 
 /* the colour of the hyperlinks in the yellow publish box */
+/* CSS id="publish-box" */
 #publish-box a {
   color: var(--body-hyperlink-color);
 }
 
 /* the colour of the footer background */
+/* CSS id="segment-footer" */
 #segment-footer > .container {
   background-color: var(--footer-background-color);
 }
 
 /* render the copy to clipboard buttons visible */
+/* CSS class="copy-text btn-copy" */
 .copy-text .btn-copy {
   visibility: visible;
 }
 
 /* background colour of canonical table at the top of resources */
+/* CSS selector table.colsd td */
 table.colsd td {
 	background-color: var(--canonical-table-background-color);
 }
