@@ -95,10 +95,6 @@ This is the thin bar across the page in line with the top of the navigation bar
 ### f) Canonical information table
 This is the table seen at the top of the page of all resources that includes official URL, status and copyright notices etc.
 
-#### Background colour
-* setting: `table.colsd td`
-* font colour set to [`#ffffe6`](https://www.color-hex.com/color/ffffe6), as found on other IGs such as HL7AU and US Core
-
 #### Visibility of copy to clipboard buttons
 * setting: `.copy-text .btn-copy`
 * set to visible rather than hidden as set by the HL7 base template
