@@ -7,7 +7,7 @@ It will directly inherit from the HL7 International IG Template Base (https://gi
 package id = `adha.template.base`
 
 ## Canonical Identifier
-package id = `http://ns.electronichealth.net.au/fhir/Template/adha.template.base`
+`http://ns.electronichealth.net.au/fhir/Template/adha.template.base`
 
 ## Localisations
 For detailed descriptions of the localisations this template introduces, refer to [localisations](localisations.md).
