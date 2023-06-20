@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - revised footer hyperlink colour to align with existing template
+- added colour setting for the header's centre colour (light grey to match existing template)

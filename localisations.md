@@ -57,7 +57,11 @@ The CSS file `content/assets/css/ADHA.css` includes the following styling locali
 * text-align: center;
 * height: 50px;
 
-### c) Navigation bar
+### c) Header background colour
+* setting: root --ig-header-container-color
+* set to light grey : [`#f5f5f5`](https://www.color-hex.com/color/f5f5f5)
+
+### d) Navigation bar
 
 #### Background colour
 * setting: `.navbar-inverse. background-color`
@@ -75,14 +79,14 @@ The CSS file `content/assets/css/ADHA.css` includes the following styling locali
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF), given the background is set to [`#1E6DB6`](https://www.color-hex.com/color/1E6DB6); contrast ratio is [5.35:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=1E6DB6)
 
-### d) Menu bar stripe
+### e) Menu bar stripe
 This is the thin bar across the page in line with the top of the navigation bar
 
 #### Colour
 * setting: `#stripe background`
 * set to the Agency required [`#1E6DB6`](https://www.color-hex.com/color/1e6db6)
 
-### e) Publish box
+### f) Publish box
 
 #### Colour of the hyperlinks
 * setting: `#publish-box a`
@@ -92,14 +96,14 @@ This is the thin bar across the page in line with the top of the navigation bar
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFEB7E`](https://www.color-hex.com/color/FFEB7E); contrast ratio is [5.72:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFEB7E)
 
-### f) Canonical information table
+### g) Canonical information table
 This is the table seen at the top of the page of all resources that includes official URL, status and copyright notices etc.
 
 #### Visibility of copy to clipboard buttons
 * setting: `.copy-text .btn-copy`
 * set to visible rather than hidden as set by the HL7 base template
 
-### g) Main body of text
+### h) Main body of text
 
 #### Colour of the hyperlinks
 This includes hyperlinks in the yellow contents box
@@ -110,14 +114,14 @@ This includes hyperlinks in the yellow contents box
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
 * font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [6.89:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFFFFF)
 
-### h) Detailed descriptions pages
+### i) Detailed descriptions pages
 
 #### Colour of the numbered headings 
 * Change the heading number to be black instead of grey so that the contrast is optimised for WCAG compliance
 * setting `.self-link-parent span`
 * set to black [`#000000`](https://www.color-hex.com/color/000000)
 
-### i) Footer
+### j) Footer
 
 #### Footer background colour
 * setting: `#segment-footer > .container`

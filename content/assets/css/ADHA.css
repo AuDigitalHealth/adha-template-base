@@ -7,6 +7,7 @@
   --full-black: #000000; /* full black for fonts etc*/
   --full-white: #FFFFFF; /* full white for navigation bar fonts */
   --body-hyperlink-color: #005ba6; /* the colour of hyperlinks */
+  --ig-header-container-color: #f5f5f5 /* Header container color (center) */
 }
 
 /* the colour of the top navigation bar */
