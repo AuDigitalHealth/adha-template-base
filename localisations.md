@@ -125,8 +125,8 @@ This includes hyperlinks in the yellow contents box
 
 #### Footer hyperlink font colour
 * setting: `:root --footer-hyperlink-text-color`
-* font colour set to [`#F6F9C8`](https://www.color-hex.com/color/F6F9C8), for improved contrast (see below for compliance to WCAG)
-* NOTE that this colour choice is a placeholder only to demonstrate to ability to improve contrast with its background
+* font colour set to [`#81BEF7`](https://www.color-hex.com/color/81BEF7), to align with the existing ADHA styling.
+* note that this colour does not provide sufficient contrast to the background and as such does not meet compliance to WCAG
 
 #### Compliance to WCAG Level 2.1 re colour contrast
 * for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
