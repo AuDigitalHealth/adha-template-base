@@ -10,6 +10,8 @@ To the header, add:
 
 ### b) `/_append.fragment-footer.html`
 After the existing core template footer, add the following:
+* an include for an IG-specific file containing a hard-coded link to the IG's version history
+* an include for an IG-specific file containing a hard-coded link to the IG's propose a change page (ie GitHub issues)
 * an empty line
 * a line with "Publisher: [Australian Digital Health Agency](https://www.digitalhealth.gov.au) ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000"
 * a line with "Telephone 1300 901 001 or email [help@digitalhealth.gov.au](mailto:help@digitalhealth.gov.au)"

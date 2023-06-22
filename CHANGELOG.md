@@ -10,8 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - first draft for team review
 
-## [0.0.2] - 2023-06-20
+## [0.0.2] - 2023-06-22
 
 ### Added
-- revised footer hyperlink colour to align with existing template
 - added colour setting for the header's centre colour (light grey to match existing template)
+- added footer links for version history and proposing a change
+
+### Changed
+- revised footer hyperlink colour to align with existing template
