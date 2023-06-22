@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.2] - 2023-06-22
 
 ### Added
-- added colour setting for the header's centre colour (light grey to match existing template)
+- added colour setting for the header's central colour (light grey to match existing template)
 - added footer links for version history and proposing a change
 
 ### Changed
