@@ -16,8 +16,23 @@
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6, .title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
   margin: 1em 0 0.6em 0;
+}
+
+/* Heading prefixes */
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+  color: #666666;
 }
 
 /* Segment container */
@@ -33,7 +48,6 @@ h1, h2, h3, h4, h5, h6, .title {
   flex-wrap: wrap;
   align-items: center;
 }
-
 
 /* Crest */
 #family-nav {
@@ -106,7 +120,9 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 /* Navbar item open */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
   background-color: var(--btn-active-color);
 }
 
@@ -120,6 +136,11 @@ h1, h2, h3, h4, h5, h6, .title {
   filter: none;
 }
 
+.navbar-inverse li a[href^="http://"]:not([no-external^="true"]):after,
+.navbar-inverse li a[href^="https://"]:not([href^="https://build.fhir.org"]):not([no-external^="true"]):after {
+  filter: contrast(2) brightness(1.5) saturate(0.25);
+}
+
 /* Navbar stripe */
 #stripe {
   background: var(--navbar-background-color);
@@ -128,10 +149,12 @@ h1, h2, h3, h4, h5, h6, .title {
 /* Breadcrumb delimiter */
 .breadcrumb > li + li:before {
   padding: 0 5px 0 10px;
+  color: #666666;
 }
 
 /* Content inner wrapper */
-#content > .inner-wrapper, .container > .row > .inner-wrapper {
+#content > .inner-wrapper,
+.container > .row > .inner-wrapper {
   margin-top: 10px;
   margin-bottom: 20px;
 }
