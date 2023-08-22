@@ -27,11 +27,11 @@ h6,
 }
 
 /* Heading prefixes */
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
+.segment h2:before,
+.segment h3:before,
+.segment h4:before,
+.segment h5:before,
+.segment h6:before {
   color: #666666;
 }
 
