@@ -1,99 +1,210 @@
-/* colour variables */
-/* NOTE - the following colours have not yet been ratified by the ADHA Comms Digital Team */
+/* Root variables */
 :root {
-  --footer-hyperlink-text-color: #81BEF7; /* the colour of the hyperlinks in the footer */
-  --footer-background-color: #707070; /* the colour of the footer background */
-  --navbar-background-color: #1E6DB6; /* the colour of the background of the navigation bar */
-  --full-black: #000000; /* full black for fonts etc*/
-  --full-white: #FFFFFF; /* full white for navigation bar fonts */
-  --body-hyperlink-color: #005ba6; /* the colour of hyperlinks */
-  --ig-header-container-color: #f5f5f5; /* Header container color (center) */
+  --full-black: #000000; /* Black colour */
+  --full-white: #FFFFFF; /* White colour */
+  --body-hyperlink-color: #005ba6; /* Link colour */
+  --btn-active-color: #0079db; /* Button active colour */
+  --btn-hover-color: #0079db; /* Button hover colour */
+  --ig-header-container-color: #f5f5f5; /* Header background colour */
+  --navbar-background-color: #005ba6; /* Navbar background colour */
+  --publish-box-bg-color: gold; /* Version box background colour */
+  --publish-box-border: maroon; /* Version box border colour */
+  --publish-box-past-bg-color: #ffaaaa; /* Version box past background colour */
+  --footer-background-color: #005ba6; /* Footer background colour */
+  --footer-bg-color: #005ba6; /* Footer background colour */
+  --footer-hyperlink-text-color: #b8dcf9; /* Footer links */
 }
 
-/* the colour of the top navigation bar */
-/* CSS class="navbar-inverse" */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  margin: 1em 0 0.6em 0;
+}
+
+/* Heading prefixes */
+.segment h2:before,
+.segment h3:before,
+.segment h4:before,
+.segment h5:before,
+.segment h6:before {
+  color: #666666;
+}
+
+/* Segment container */
+.segment > .container {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+/* Header segment container */
+#segment-header > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Crest */
+#family-nav {
+  color: var(--full-black);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Crest logo */
+#family-logo {
+  float: none;
+  margin: 30px 0 30px 0;
+  margin-right: 0;
+  display: block;
+}
+
+/* Site heading */
+#ig-status {
+  line-height: 1.5;
+  margin: auto 0 25px 0;
+  color: var(--full-black);
+  text-align: center;
+  flex: 1 1 auto;
+  padding: 0 20px;
+  height: auto;
+}
+
+/* Site heading paragraph */
+#ig-status p {
+  padding-bottom: 0;
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Site heading paragraph span */
+#ig-status p span {
+  display: block;
+}
+
+/* Site heading paragraph span image */
+#ig-status p span:last-child img {
+  position: relative;
+  top: -1px;
+  left: 5px;
+}
+
+/* Navbar */
 .navbar-inverse {
   background-color: var(--navbar-background-color);
 }
 
-/* the 'on-hover' colour of the navigation bar menu headings */
-/* CSS class="navbar-inverse navbar-nav" */
-.navbar-inverse .navbar-nav > li > a:hover {
-  background-color: var(--full-black);
-}
-
-/* the thin bar across the page in line with the top of the navigation bar */
-/* CSS id="stripe" */
-#stripe {
-  background: var(--navbar-background-color);
-}
-
-/* the placement of the 'family-nav' container (that contains the logo) */
-/* CSS id="family-nav" */
-#family-nav {
-  line-height: 70px;
-  float: left;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  color: #808080;
-}
-
-/* the placement of the ADHA logo within the 'family-nav' container */
-/* CSS id="family-logo" */
-#family-logo {
-  float: left;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-  margin-right: 40px;
-  display: block;
-}
-
-/* the styling of the IG title */
-/* CSS id="ig-status" */
-#ig-status {
-  line-height: 70px;
-  margin-top: 40px;
-  margin-left: 250px;
-  color: var(--full-black);
-  text-align: center;
-  height: 50px;
-}
-
-/* the font colour of the nav bar headings */
-/* CSS class="navbar-inverse navbar-nav" */
+/* Navbar item */
 .navbar-inverse .navbar-nav > li > a {
   color:  var(--full-white);
 }
 
-/* the colour of the hyperlinks in the main body of text */
-/* includes the hyperlinks in the yellow contents box */
-/* CSS id="segment-content" */
-#segment-content a {
-  color: var(--body-hyperlink-color);
+/* Navbar item hover */
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: var(--btn-hover-color);
 }
 
-/* the colour of the hyperlinks in the yellow publish box */
-/* CSS id="publish-box" */
+/* Dropdown item hover */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background-color: var(--btn-hover-color);
+  background-image: none;
+  filter: none;
+}
+
+/* Navbar item open */
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: var(--btn-active-color);
+}
+
+/* Dropdown item active */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: var(--btn-active-color);
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: none;
+}
+
+.navbar-inverse li a[href^="http://"]:not([no-external^="true"]):after,
+.navbar-inverse li a[href^="https://"]:not([href^="https://build.fhir.org"]):not([no-external^="true"]):after {
+  filter: contrast(2) brightness(1.5) saturate(0.25);
+}
+
+/* Navbar stripe */
+#stripe {
+  background: var(--navbar-background-color);
+}
+
+/* Breadcrumb delimiter */
+.breadcrumb > li + li:before {
+  padding: 0 5px 0 10px;
+  color: #666666;
+}
+
+/* Content inner wrapper */
+#content > .inner-wrapper,
+.container > .row > .inner-wrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Version box link */
 #publish-box a {
   color: var(--body-hyperlink-color);
 }
 
-/* the colour of the footer background */
-/* CSS id="segment-footer" */
-#segment-footer > .container {
-  background-color: var(--footer-background-color);
+/* Standard publish box - see https://hl7.org/fhir/R5/ */
+#publish-box {
+  padding: 5px;
+  background-color: var(--publish-box-bg-color);
+  border: 1px solid var(--publish-box-border);
 }
 
-/* render the copy to clipboard buttons visible */
-/* CSS class="copy-text btn-copy" */
+/* Standard past publish box - see https://hl7.org/fhir/R4/ */
+#publish-box-past {
+  padding: 5px;
+  background-color: var(--publish-box-past-bg-color);
+  border: 1px solid var(--publish-box-border);
+}
+
+/* Body link */
+#segment-content a {
+  color: var(--body-hyperlink-color);
+}
+
+/* Copy button */
 .copy-text .btn-copy {
   visibility: visible;
 }
 
-/* Override the colour of the table heading numbers on detailed description pages */
-/* Change the heading number to be black instead of grey so that the contrast is optimised for WCAG compliance */
-/* need to use the CSS !important rule as the value for grey is embedded inline and therefore cannot be overridden in CSS unless combined with !important */
+/* Table heading number */
 .self-link-parent span {
+  /* For contrast */
   color: var(--full-black) !important;
+}
+
+/* Footer segment */
+#segment-footer {
+  background-color: var(--footer-bg-color);
+}
+
+/* Footer segment container */
+#segment-footer > .container {
+  background-color: var(--footer-background-color);
+}
+
+/* Footer segment container inner wrapper */
+#segment-footer > .container .inner-wrapper {
+  padding: 20px 0;
 }
