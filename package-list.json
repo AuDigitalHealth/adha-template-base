@@ -12,6 +12,14 @@
       "current": true
     },
     {
+      "version": "0.1.0",
+      "desc": "Updates from ADHA web development team for corporate styling",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2023-09-12"
+    },
+    {
       "version": "0.0.2",
       "desc": "Second draft following team review",
       "path": "https://github.com/AuDigitalHealth/adha.template.base",
