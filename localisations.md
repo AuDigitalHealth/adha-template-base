@@ -1,6 +1,8 @@
 # Template inclusions
 This FHIR template adds the following specific styling elements:
 
+## OUT OF DATE for version 0.1.0
+
 ## 1. ./includes
 ### a) `/_append.fragment-header.html`
 To the header, add:
