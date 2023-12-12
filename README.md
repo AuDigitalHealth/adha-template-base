@@ -9,8 +9,5 @@ package id = `adha.template.base`
 ## Canonical Identifier
 `http://ns.electronichealth.net.au/fhir/Template/adha.template.base`
 
-## Localisations
-For detailed descriptions of the localisations this template introduces, refer to [localisations](localisations.md).
-
 ## Changelog
 Refer to [changelog](CHANGELOG.md)
