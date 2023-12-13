@@ -12,6 +12,14 @@
       "current": true
     },
     {
+      "version": "0.1.1",
+      "desc": "Footer updated with class for conditional rendering",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2023-12-12"
+    },
+    {
       "version": "0.1.0",
       "desc": "Updates from ADHA web development team for corporate styling",
       "path": "https://github.com/AuDigitalHealth/adha.template.base",
