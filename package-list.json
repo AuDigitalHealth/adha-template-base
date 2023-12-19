@@ -12,6 +12,14 @@
       "current": true
     },
     {
+      "version": "0.1.2",
+      "desc": "Add link for fhir.js for downstream use in the Developer Portal",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2023-12-19"
+    },
+    {
       "version": "0.1.1",
       "desc": "Footer updated with class for conditional rendering",
       "path": "https://github.com/AuDigitalHealth/adha.template.base",
