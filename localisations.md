@@ -6,7 +6,7 @@ This FHIR template adds the following specific styling elements:
 ## 1. ./includes
 ### a) `/_append.fragment-header.html`
 To the header, add:
-* Australian Digital Health Agency logo (`content/assets/images/adha-logo-dark.svg`)
+* Australian Digital Health Agency logo (`content/assets/images/adha-logo-light.svg`)
 * the image has the alt text of "Visit the Australian Digital Health Website"
 * the image has an associated hyperlink to the Agency home page
 
