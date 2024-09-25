@@ -17,7 +17,7 @@
     <link href="{{site.data.info.assets}}assets/css/project.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="{{site.data.info.assets}}assets/css/prism.css" rel="stylesheet" />
+    <link href="{{site.data.info.assets}}assets/css/prism.css" rel="stylesheet" />
     {% include fragment-css.html %}
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -98,17 +98,7 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           {{site.data.pages[page.path].breadcrumb}}
-{% if shownav == 'y' %}
-          <span style="float:right;">
-{% if site.data.pages[page.path].previous %}
-            <a href="{{site.data.pages[page.path].previous}}">&lt;prev</a> | 
-{% endif %}
-            <a href="#bottom">bottom</a>
-{% if site.data.pages[page.path].next %}
-          | <a href="{{site.data.pages[page.path].next}}">next&gt;</a>
-{% endif %}
-          </span>
-{% endif %}
+          {% if shownav == 'y' %}<span style="float:right;">{% if site.data.pages[page.path].previous %}<a href="{{site.data.pages[page.path].previous}}">&lt;prev</a> | {% endif %}<a href="#bottom">bottom</a>{% if site.data.pages[page.path].next %} | <a href="{{site.data.pages[page.path].next}}">next&gt;</a>{% endif %}</span>{% endif %}
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
