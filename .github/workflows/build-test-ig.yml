@@ -2,7 +2,7 @@ name: Build test FHIR IG
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ dev-portal ]
 
 jobs:
   build:
