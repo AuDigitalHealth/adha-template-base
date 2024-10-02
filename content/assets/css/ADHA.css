@@ -2,17 +2,16 @@
 :root {
   --full-black: #000000; /* Black colour */
   --full-white: #FFFFFF; /* White colour */
-  --body-hyperlink-color: #005ba6; /* Link colour */
-  --btn-active-color: #25abe0; /* Button active colour */
-  --btn-hover-color: #25abe0; /* Button hover colour */
-  --ig-header-container-color: #f5f5f5; /* Header background colour */
+  --body-hyperlink-color: #005BA6; /* Link colour */
+  --btn-active-color: #25ABE0; /* Button active colour */
+  --btn-hover-color: #25ABE0; /* Button hover colour */
+  --ig-header-container-color: #F5F5F5; /* Header background colour */
   --navbar-background-color: #212529; /* Navbar background colour */
   --publish-box-bg-color: gold; /* Version box background colour */
   --publish-box-border: maroon; /* Version box border colour */
-  --publish-box-past-bg-color: #ffaaaa; /* Version box past background colour */
+  --publish-box-past-bg-color: #FFAAAA; /* Version box past background colour */
   --footer-background-color: #212529; /* Footer background colour */
-  --footer-bg-color: #212529; /* Footer background colour */
-  --footer-hyperlink-text-color: #b8dcf9; /* Footer links */
+  --footer-hyperlink-text-color: #B8DCF9; /* Footer links */
 }
 
 /* Headings */
@@ -191,21 +190,6 @@ h6,
   color: var(--full-black) !important;
 }
 
-/* Footer segment */
-#segment-footer {
-  background-color: var(--footer-bg-color);
-}
-
-/* Footer segment container */
-#segment-footer > .container {
-  background-color: var(--footer-background-color);
-}
-
-/* Footer segment container inner wrapper */
-#segment-footer > .container .inner-wrapper {
-  padding: 25px 0;
-}
-
 /* Styles for Developer Portal context */
 
 html {
@@ -372,10 +356,30 @@ body {
   font-size: 14px !important;
 }
 
+#dev-portal-footer a {
+  color: var(--footer-hyperlink-text-color);
+}
+
 .dev-portal #brand-footer {
   padding: 2rem 0;
 }
 
 .dev-portal #footer-acknowledgement {
   padding: 1rem 0 2rem 0;
+}
+
+/* Styles for embedded iFrame in Developer Portal context */
+
+body.framed {
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: hidden;
+}
+
+body.framed .container {
+  max-width: 100% !important;
+}
+
+body.framed .dev-portal-embed-hide {
+  display: none !important;
 }

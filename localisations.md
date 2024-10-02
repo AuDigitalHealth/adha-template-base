@@ -28,8 +28,8 @@ See below for the specific styling localisations in `ADHA.css`.
 ## 2. ./layouts
 No layout localisations have been introduced in this template
 
-## 3. ./scripts
-No scripts have been introduced in this template
+## 3. JavaScript code
+The JS file `content/assets/js/ADHA.js` includes code to handle the scenario where the IG is embedded in an iFrame on the Developer Portal website: add a body class, handle links, and resize iFrame content when the iFrame is resized.
 
 ## 4. CSS Styling
 The CSS file `content/assets/css/ADHA.css` includes the following styling localisations:
@@ -128,10 +128,13 @@ This includes hyperlinks in the yellow contents box
 ### j) Footer
 
 #### Footer background colour
-* setting: `#segment-footer > .container`
-* set to the Agency required [`#707070`](https://www.color-hex.com/color/707070)
+* setting: `#dev-portal-footer`
+* set to the Agency required [`#212529`](https://www.color-hex.com/color/212529)
 
 #### Footer hyperlink font colour
-* setting: `:root --footer-hyperlink-text-color`
-* font colour set to [`#81BEF7`](https://www.color-hex.com/color/81BEF7), to align with the existing ADHA styling.
-* note that this colour does not provide sufficient contrast to the background and as such does not meet compliance to WCAG (contrast ratio is [2.5:1](https://webaim.org/resources/contrastchecker/?fcolor=81BEF7&bcolor=707070))
+* setting: `#dev-portal-footer a`
+* font colour set to [`#B8DCF9`](https://www.color-hex.com/color/B8DCF9), to align with the existing ADHA styling.
+
+### k) iFrame context
+
+CSS to handle the scenario where the IG is embedded in an iFrame on the Developer Portal site.

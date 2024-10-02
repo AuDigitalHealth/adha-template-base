@@ -2,7 +2,7 @@
 </div>  <!-- /row -->
 </div>  <!-- /container -->
 </div>  <!-- /segment-content -->
-<div id="dev-portal-brand-ribbon" class="dev-portal">
+<div id="dev-portal-brand-ribbon" class="dev-portal dev-portal-embed-hide">
   <div id="brand-ribbon-band-blue-dark"></div>
   <div id="brand-ribbon-band-blue-light"></div>
   <div id="brand-ribbon-band-orange"></div>
@@ -13,31 +13,26 @@
   <div id="footer-inner" class="section-inner">
     <div id="footer-container" class="section-container">
       <a name="bottom"> </a>
-      <div id="brand-footer">
+      <div id="brand-footer" class="dev-portal-embed-hide">
         <a no-external="true" href="https://developer.digitalhealth.gov.au/">
           <img alt="Australian Digital Health Agency Developer Portal" src="{{site.data.info.assets}}assets/images/adha-logo-light.svg" width="275px" />
         </a>
       </div>
-      <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-      <div class="container">  <!-- container -->
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; {{site.data.info.copyrightyear}} <a style="color:var(--footer-hyperlink-text-color)" href="{{site.data.fhir.ig.contact[0].telecom[0]}}">{{site.data.fhir.ig.publisher | escape}}</a>.  Package {{site.data.fhir.packageId}}#{{site.data.fhir.igVer}} based on <a style="color: var(--footer-hyperlink-text-color)" href="{{site.data.fhir.path}}">FHIR {{site.data.fhir.version}}</a>. Generated <span title="{{site.data.fhir.genDate}}">{{site.data.fhir.genDate | date: "%Y-%m-%d"}}</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-            {% include fragment-footer.html %}
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /container -->
-      </div>  <!-- /segment-footer -->
-      <div id="footer-acknowledgement">The Australian Digital Health Agency acknowledges the Traditional Custodians of Country throughout Australia, and their continuing connection to land, sea and community. We pay our respects to them and their cultures, and to Elders, past and present.</div>
+      <p class="dev-portal-embed-hide">
+        IG &#169; {{site.data.info.copyrightyear}} <a href="{{site.data.fhir.ig.contact[0].telecom[0]}}">{{site.data.fhir.ig.publisher | escape}}</a>.  Package {{site.data.fhir.packageId}}#{{site.data.fhir.igVer}} based on <a href="{{site.data.fhir.path}}">FHIR {{site.data.fhir.version}}</a>. Generated <span title="{{site.data.fhir.genDate}}">{{site.data.fhir.genDate | date: "%Y-%m-%d"}}</span>
+      </p>
+      <p>
+        {% include fragment-footer.html %}
+      </p>
+      <div id="footer-acknowledgement" class="dev-portal-embed-hide">
+        The Australian Digital Health Agency acknowledges the Traditional Custodians of Country throughout Australia, and their continuing connection to land, sea and community. We pay our respects to them and their cultures, and to Elders, past and present.
+      </div>
     </div>
   </div>
 </div>
 <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
 </div>  <!-- /segment-post-footer -->
 <!-- JavaScript -->
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery.js"> </script>
@@ -46,12 +41,13 @@
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/tabs.js"> </script>
 {% endif %}
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/ADHA.js"> </script>
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/bootstrap.min.js"> </script>
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/respond.min.js"> </script>
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="{{site.data.info.assets}}assets/js/clipboard-btn.js"> </script>
 <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below -->
 </body>
