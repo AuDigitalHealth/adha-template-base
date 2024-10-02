@@ -29,7 +29,7 @@ See below for the specific styling localisations in `ADHA.css`.
 No layout localisations have been introduced in this template
 
 ## 3. JavaScript code
-The JS file `content/assets/js/ADHA.js` includes code to handle the scenario where the IG is embedded in an iFrame on the Developer Portal website: add a body class, handle links, and resize iFrame content when the iFrame is resized.
+The `fragment-pageend.html` file includes JS code to handle the scenario where the IG is embedded in an iFrame on the Developer Portal website: add a body class, handle links, and resize iFrame content when the iFrame is resized.
 
 ## 4. CSS Styling
 The CSS file `content/assets/css/ADHA.css` includes the following styling localisations:
