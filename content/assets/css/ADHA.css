@@ -383,3 +383,7 @@ body.framed .container {
 body.framed .dev-portal-embed-hide {
   display: none !important;
 }
+
+body.framed #dev-portal-footer {
+  padding: 15px 0 10px 0;
+}
