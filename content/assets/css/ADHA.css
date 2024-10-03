@@ -192,14 +192,6 @@ h6,
 
 /* Styles for Developer Portal context */
 
-html {
-  font-size: 100%;
-}
-
-body {
-  font-size: 16px;
-}
-
 .dev-portal * {
   font-family: Inter, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif !important;
 }
@@ -223,6 +215,10 @@ body {
 
 #dev-portal-banner {
   background-color: #212529;
+}
+
+#dev-portal-banner * {
+  font-size: 16px;
 }
 
 .dev-portal #banner-inner {
@@ -268,7 +264,7 @@ body {
 
 #dev-portal-sitename h1 {
   color: var(--full-white);
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 500;
   line-height: 1.25;
   margin: 0;
@@ -277,8 +273,9 @@ body {
 }
 
 .dev-portal #subtitle {
-  font-size: 1.25rem;
   color: var(--full-white);
+  font-size: 20px;
+  font-weight: 500;
   padding: 0.75rem 0 0 0;
 }
 
