@@ -9,24 +9,13 @@
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link href="{{site.data.info.assets}}fhir.css" rel="stylesheet"/>
-
-    <!-- Bootstrap core CSS -->
     <link href="{{site.data.info.assets}}assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-
-    <!-- Project extras -->
     <link href="{{site.data.info.assets}}assets/css/project.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/jquery-ui.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/prism.css" rel="stylesheet" />
+    <link href="{{site.data.info.assets}}assets/css/ADHA.css" rel="stylesheet"/>
     {% include fragment-css.html %}
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
-    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
 
     <!-- Favicons -->
     <link rel="fhir-logo" sizes="144x144" href="{{site.data.info.assets}}assets/ico/icon-fhir-144.png"/>
@@ -37,38 +26,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
     {% assign label = {{site.data.pages[page.path].label}} | split: '.0' %}
-	  <script src="{{site.data.info.assets}}assets/js/prism.js"> </script>
-    <script type="text/javascript" src="{{site.data.info.assets}}assets/js/mermaid.js"> </script>
-    <script type="text/javascript" src="{{site.data.info.assets}}assets/js/mermaid-init.js"> </script>
+
     <style type="text/css">h2{--heading-prefix:"{{site.data.info.headingOffset}}{{label}}"}h3,h4,h5,h6{--heading-prefix:"{{site.data.info.headingOffset}}{{site.data.pages[page.path].label}}"}</style>
     <div id="dev-portal-banner" class="dev-portal dev-portal-embed-hide">
       <div id="banner-inner" class="section-inner">
         <div id="banner-container" class="section-container">
           <div id="brand-banner">
             {% include fragment-header.html %}
-            <div id="dev-portal-sitename">
-              <div id="ig-status">
-                <h1>{{site.data.fhir.ig.title | escape_once}}</h1>
-                <div id="subtitle">
-                  {% if site.data.info.releaselabel != '' %}
-                    {% assign status = site.data.info.releaselabel %}
-                  {% else %}
-                    {% assign status = site.data.fhir.ig.status %}
-                  {% endif %}
-                  {{site.data.fhir.ig.version}} - {{status}}
-                  {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
-                  {% for jurisdiction in site.data.resources[igId].jurisdictions %}
-                    {% if jurisdiction.flag %}
-                      <img alt="{{jurisdiction.name}} flag" src="assets/images/{{jurisdiction.flag}}.svg" height="16" title="{{jurisdiction.name}}"/>
-                    {% elsif jurisdiction.code %}
-                      <span title="{{jurisdiction.name}}">{{jurisdiction.code}}</span>
-                    {% else %}
-                      {{jurisdiction.name}}
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
           </div>
           <div id="menu-banner">
             <ul>
@@ -119,5 +83,5 @@
     <a name="top"> </a>
     <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
-        <div class="row">
-          <div class="inner-wrapper">
+        <div class="row">  <!-- row -->
+          <div class="inner-wrapper">  <!-- inner-wrapper -->

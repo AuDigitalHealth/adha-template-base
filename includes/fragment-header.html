@@ -3,3 +3,26 @@
     <img alt="Australian Digital Health Agency Developer Portal" src="{{site.data.info.assets}}assets/images/adha-logo-light.svg" width="275px" />
   </a>
 </div>
+<div id="dev-portal-sitename">
+  <div id="ig-status">
+    <h1>{{site.data.fhir.ig.title | escape_once}}</h1>
+    <div id="subtitle">
+      {% if site.data.info.releaselabel != '' %}
+        {% assign status = site.data.info.releaselabel %}
+      {% else %}
+        {% assign status = site.data.fhir.ig.status %}
+      {% endif %}
+      {{site.data.fhir.ig.version}} - {{status}}
+      {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
+      {% for jurisdiction in site.data.resources[igId].jurisdictions %}
+        {% if jurisdiction.flag %}
+          <img alt="{{jurisdiction.name}} flag" src="assets/images/{{jurisdiction.flag}}.svg" height="16" title="{{jurisdiction.name}}"/>
+        {% elsif jurisdiction.code %}
+          <span title="{{jurisdiction.name}}">{{jurisdiction.code}}</span>
+        {% else %}
+          {{jurisdiction.name}}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,140 +1,19 @@
 # Template inclusions
-This FHIR template adds the following specific styling elements:
 
-## OUT OF DATE for version 0.1.0
+This FHIR template adds the following elements:
 
-## 1. ./includes
-### a) `/_append.fragment-header.html`
-To the header, add:
-* Australian Digital Health Agency logo (`content/assets/images/adha-logo-light.svg`)
-* the image has the alt text of "Visit the Australian Digital Health Website"
-* the image has an associated hyperlink to the Agency home page
+## fragment-pagebegin.html
 
-### b) `/_append.fragment-footer.html`
-After the existing core template footer, add the following:
-* an include for an IG-specific file containing a hard-coded link to the IG's version history
-* an include for an IG-specific file containing a hard-coded link to the IG's propose a change page (ie GitHub issues)
-* an empty line
-* a line with "Publisher: [Australian Digital Health Agency](https://www.digitalhealth.gov.au) ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000"
-* a line with "Telephone 1300 901 001 or email [help@digitalhealth.gov.au](mailto:help@digitalhealth.gov.au)"
-* a line with the ADHA website: "https://www.digitalhealth.gov.au"
-* a line with "[Privacy policy](https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/privacy-policy) | [Terms of Use](https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/terms-of-use)"
+This file adds the upper page markup.
 
-### c) `/_append.fragment-css.html`
-The Agency CSS is introduced (`content/assets/css/ADHA.css`)
+## fragment-header.html
 
-See below for the specific styling localisations in `ADHA.css`.
+This file adds markup to the header.
 
-## 2. ./layouts
-No layout localisations have been introduced in this template
+## fragment-pageend.html
 
-## 3. JavaScript code
-The `fragment-pageend.html` file includes JS code to handle the scenario where the IG is embedded in an iFrame on the Developer Portal website: add a body class, handle links, and resize iFrame content when the iFrame is resized.
+This file adds the lower page markup.
 
-## 4. CSS Styling
-The CSS file `content/assets/css/ADHA.css` includes the following styling localisations:
+## fragment-footer.html
 
-### a) ADHA Logo
-
-#### ADHA logo placement (in `family-nav` div container)
-* setting `#family-logo`
-* float: left
-* margin-top: 20px
-* margin-left: 40px
-* margin-bottom: 20px
-* margin-right: 40px
-* display: block
-
-#### Placement of logo container (`family-nav` div)
-* setting: `#family-nav`
-* line-height: 70px;
-* float: left;
-* margin-top: 4px;
-* margin-bottom: 4px;
-
-### b) Implementation Guide title
-* setting: `#ig-status`
-* line-height: 70px;
-* margin-top: 40px;
-* margin-left: 250px;
-* color: #000000;
-* text-align: center;
-* height: 50px;
-
-### c) Header background colour
-* setting: root --ig-header-container-color
-* set to light grey : [`#f5f5f5`](https://www.color-hex.com/color/f5f5f5)
-
-### d) Navigation bar
-
-#### Background colour
-* setting: `.navbar-inverse. background-color`
-* set to the Agency required [`#1E6DB6`](https://www.color-hex.com/color/1e6db6)
-
-#### Colour of the menu headings 'on-hover' 
-* setting: `.navbar-inverse .navbar-nav > li > a:hover`
-* set to black [`#000000`](https://www.color-hex.com/color/000000)
-
-#### Colour of the navigation bar heading font
-* setting: `.navbar-inverse .navbar-nav > li > a`
-* font colour set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF), for improved contrast (see below for compliance to WCAG)
-
-#### Compliance to WCAG Level 2.1 re colour contrast
-* for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
-* font colour set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF), given the background is set to [`#1E6DB6`](https://www.color-hex.com/color/1E6DB6); contrast ratio is [5.35:1](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=1E6DB6)
-
-### e) Menu bar stripe
-This is the thin bar across the page in line with the top of the navigation bar
-
-#### Colour
-* setting: `#stripe background`
-* set to the Agency required [`#1E6DB6`](https://www.color-hex.com/color/1e6db6)
-
-### f) Publish box
-
-#### Colour of the hyperlinks
-* setting: `#publish-box a`
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast matching the hyperlink colour on the public ADHA website (see below for compliance to WCAG)
-
-#### Compliance to WCAG Level 2.1 re colour contrast
-* for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFEB7E`](https://www.color-hex.com/color/FFEB7E); contrast ratio is [5.72:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFEB7E)
-
-### g) Canonical information table
-This is the table seen at the top of the page of all resources that includes official URL, status and copyright notices etc.
-
-#### Visibility of copy to clipboard buttons
-* setting: `.copy-text .btn-copy`
-* set to visible rather than hidden as set by the HL7 base template
-
-### h) Main body of text
-
-#### Colour of the hyperlinks
-This includes hyperlinks in the yellow contents box
-* setting: `#segment-content a`
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), for improved contrast matching the hyperlink colour on the public ADHA website (see below for compliance to WCAG)
-
-#### Compliance to WCAG Level 2.1 re colour contrast
-* for compliance to the Web Content Accessibility Guidelines [(WCAG) Level 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/), regarding minimum contrast ratio, at level AA
-* font colour set to [`#005BA6`](https://www.color-hex.com/color/005BA6), given the background is set to [`#FFFFFF`](https://www.color-hex.com/color/FFFFFF); contrast ratio is [6.89:1](https://webaim.org/resources/contrastchecker/?fcolor=005BA6&bcolor=FFFFFF)
-
-### i) Detailed descriptions pages
-
-#### Colour of the numbered headings 
-* Change the heading number to be black instead of grey so that the contrast is optimised for WCAG compliance
-* setting `.self-link-parent span`
-* set to black [`#000000`](https://www.color-hex.com/color/000000)
-
-### j) Footer
-
-#### Footer background colour
-* setting: `#dev-portal-footer`
-* set to the Agency required [`#212529`](https://www.color-hex.com/color/212529)
-
-#### Footer hyperlink font colour
-* setting: `#dev-portal-footer a`
-* font colour set to [`#B8DCF9`](https://www.color-hex.com/color/B8DCF9), to align with the existing ADHA styling.
-
-### k) iFrame context
-
-CSS to handle the scenario where the IG is embedded in an iFrame on the Developer Portal site.
+This file adds markup to the footer.
