@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
+    <!-- CSS -->
     <link href="{{site.data.info.assets}}fhir.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/bootstrap-fhir.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/project.css" rel="stylesheet"/>
@@ -15,7 +16,18 @@
     <link href="{{site.data.info.assets}}assets/css/jquery-ui.css" rel="stylesheet"/>
     <link href="{{site.data.info.assets}}assets/css/prism.css" rel="stylesheet" />
     <link href="{{site.data.info.assets}}assets/css/ADHA.css" rel="stylesheet"/>
+
     {% include fragment-css.html %}
+
+    {% assign label = {{site.data.pages[page.path].label}} | split: '.0' %}
+    <style type="text/css">
+      h2 {
+        --heading-prefix: "{{site.data.info.headingOffset}}{{label}}";
+      }
+      h3,h4,h5,h6 {
+        --heading-prefix: "{{site.data.info.headingOffset}}{{site.data.pages[page.path].label}}";
+      }
+    </style>
 
     <!-- Favicons -->
     <link rel="fhir-logo" sizes="144x144" href="{{site.data.info.assets}}assets/ico/icon-fhir-144.png"/>
@@ -25,16 +37,13 @@
     <link rel="shortcut icon" href="{{site.data.info.assets}}assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
-    {% assign label = {{site.data.pages[page.path].label}} | split: '.0' %}
-
-    <style type="text/css">h2{--heading-prefix:"{{site.data.info.headingOffset}}{{label}}"}h3,h4,h5,h6{--heading-prefix:"{{site.data.info.headingOffset}}{{site.data.pages[page.path].label}}"}</style>
-    <div id="dev-portal-banner" class="dev-portal dev-portal-embed-hide">
-      <div id="banner-inner" class="section-inner">
-        <div id="banner-container" class="section-container">
-          <div id="brand-banner">
+    <div id="dev-portal-banner" class="dev-portal dev-portal-embed-hide">  <!-- dev-portal-banner -->
+      <div id="banner-inner" class="section-inner">  <!-- banner-inner -->
+        <div id="banner-container" class="section-container">  <!-- banner-container -->
+          <div id="brand-banner"> <!-- brand-banner -->
             {% include fragment-header.html %}
-          </div>
-          <div id="menu-banner">
+          </div>  <!-- /brand-banner -->
+          <div id="menu-banner"> <!-- menu-banner -->
             <ul>
               <li>
                 <a href="https://developer.digitalhealth.gov.au/fhir" title="View our other FHIR IGs" target="_blank">FHIR IGs</a>
@@ -46,31 +55,27 @@
                 <a href="https://www.digitalhealth.gov.au" title="View our Agency site" target="_blank">Agency site</a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div>  <!-- /menu-banner -->
+        </div>  <!-- /banner-container -->
+      </div>  <!-- /banner-inner -->
+    </div>  <!-- /dev-portal-banner -->
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
-        <nav class="navbar navbar-inverse">
-          <!--status-bar-->
-          <div class="container">
+        <nav class="navbar navbar-inverse">  <!-- navbar -->
+          <div class="container">  <!-- container -->
             <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
             <a class="navbar-brand hidden" href="{{site.data.fhir.path}}index.html">FHIR</a>
-            <div class="nav-collapse collapse navbar-inverse-collapse">
+            <div class="nav-collapse collapse navbar-inverse-collapse">  <!-- nav-collapse -->
               {% include menu.xml %}
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
+            </div>  <!-- /nav-collapse -->
+          </div>  <!-- /container -->
+        </nav>  <!-- /navbar -->
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
     {% assign shownav = site.data.info.shownav | downcase | slice: 0 %}
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
