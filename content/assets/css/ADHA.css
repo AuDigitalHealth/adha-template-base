@@ -395,7 +395,7 @@ body.framed #dev-portal-footer {
   border-radius: 8px;
   background-color: #e9f4ff;
   margin: 20px 0;
-  overflow: hidden;
+  overflow: auto;
   display: block;
   width: 100%;
 }
