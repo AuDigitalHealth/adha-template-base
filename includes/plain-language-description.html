@@ -2,17 +2,17 @@
 
     {% capture plain_lang_content %}{% include plain-language-description.md %}{% endcapture %}
     {% assign plain_lang_content = plain_lang_content | strip %}
-    {% if plain_lang_content != "" and plain_lang_content != blank %}
+    {% if plain_lang_content == "" or plain_lang_content == blank %}
+       {% assign plain_lang_content = "No plain language description provided." %}
+    {% endif %}
 
       <div>
         <details class="plain-language-description" closed>
             <summary></summary>
             <div class="content">
-            {{ plain_lang_content | markdownify }}
+            {{ plain_lang_content | markdownify }}            
             </div>
         </details>
-      </div>
-
-    {% endif %}
+      </div>    
 
 <!-- END PLAIN LANGUAGE DESCRIPTION -->
