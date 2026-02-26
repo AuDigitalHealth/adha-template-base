@@ -1,11 +1,17 @@
 <!-- START PLAIN LANGUAGE DESCRIPTION -->
 
+    {% comment %}Try to include the plain language markdown file{% endcomment %}
     {% capture plain_lang_content %}{% include plain-language-description.md %}{% endcapture %}
+    
+    {% comment %}Remove any extra whitespace from the captured content{% endcomment %}
     {% assign plain_lang_content = plain_lang_content | strip %}
+    
+    {% comment %}If file is empty or missing, provide fallback text{% endcomment %}
     {% if plain_lang_content == "" or plain_lang_content == blank %}
        {% assign plain_lang_content = "No plain language description provided." %}
     {% endif %}
 
+      {% comment %}Display content in a collapsible details element{% endcomment %}
       <div>
         <details class="plain-language-description" closed>
             <summary></summary>
