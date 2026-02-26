@@ -1,0 +1,18 @@
+<!-- START PLAIN LANGUAGE DESCRIPTION -->
+
+    {% capture plain_lang_content %}{% include plain-language-description.md %}{% endcapture %}
+    {% assign plain_lang_content = plain_lang_content | strip %}
+    {% if plain_lang_content != "" and plain_lang_content != blank %}
+
+      <div>
+        <details class="plain-language-description" closed>
+            <summary></summary>
+            <div class="content">
+            {{ plain_lang_content | markdownify }}
+            </div>
+        </details>
+      </div>
+
+    {% endif %}
+
+<!-- END PLAIN LANGUAGE DESCRIPTION -->
