@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-03-02
+
+### Added
+
+- introduced a mechanism to allow a collapsible plain language description (PLD) section to be rendered at the top of the IG's home page. This required copying the template file `template-page-md.html`from the [HL7 base template](https://github.com/HL7/ig-template-base) in order to insert the PLD section at the appropriate location. The implementation includes a new CSS class for styling the collapsible section. 
+
 ## [0.2.0] - 2024-11-14
 
 ### Changed
