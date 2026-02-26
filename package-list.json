@@ -12,6 +12,14 @@
       "current": true
     },
     {
+      "version": "0.3.0",
+      "desc": "Introduced collapsible plain language description (PLD) section and updated ADHA.css file and updated license to CC-BY-4.0",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2026-03-02"
+    },
+    {
       "version": "0.2.0",
       "desc": "Refactored includes files and updated ADHA.css file",
       "path": "https://github.com/AuDigitalHealth/adha.template.base",
