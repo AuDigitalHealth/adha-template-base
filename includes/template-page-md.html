@@ -8,6 +8,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+  {% if page.path == 'index.html' %}
+  <!-- ============================================================= -->
+  <!-- START ADHA addition Feb 2026: the plain language description is included as a details element on the index page, and the content is pulled from the plain-language-description.md file -->
+
+  {% include plain-language-description.html %}
+
+  <!-- END ADHA addition Feb 2026 -->
+  <!-- ============================================================= -->
+  {% endif %}
+
   <h2>{{site.data.pages[page.path].title | escape_once}}</h2>
   {% assign path = page.path | split: '.html' %}
 
