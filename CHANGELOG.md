@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - changed the license from Apache 2.0 to Creative Commons Attribution 4.0 International (CC-BY-4.0)
+- changed canonical URI from `http://ns.electronichealth.net.au/fhir/Template/adha.template.base` to `http://digitalhealth.gov.au/fhir/atb/template/adha.template.base`
 
 ## [0.2.0] - 2024-11-14
 

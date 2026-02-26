@@ -4,7 +4,7 @@
   "license" : "CC-BY-4.0",
   "description" : "Base template for FHIR IGs published by the Australian Digital Health Agency",
   "author" : "https://www.digitalhealth.gov.au/",
-  "canonical" : "http://ns.electronichealth.net.au/fhir/Template/adha.template.base",  
+  "canonical" : "http://digitalhealth.gov.au/fhir/atb/template/adha.template.base",  
   "base" : "fhir.base.template",
   "dependencies" : {
     "fhir.base.template" : "current"
