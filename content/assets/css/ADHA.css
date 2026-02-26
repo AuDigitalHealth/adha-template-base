@@ -404,7 +404,7 @@ body.framed #dev-portal-footer {
   background-color: #236c89;
   color: var(--full-white);
   padding: 10px 15px;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
   list-style: none;
   outline: none;
@@ -412,6 +412,7 @@ body.framed #dev-portal-footer {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  font-size: 16px;
 }
 
 .plain-language-description summary::-webkit-details-marker {
