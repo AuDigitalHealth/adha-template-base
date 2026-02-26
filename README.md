@@ -7,7 +7,7 @@ This repo directly inherits from the HL7 International IG Template Base (https:/
 package id = `adha.template.base`
 
 ## Canonical Identifier
-`http://digitalhealth.gov.au/fhir/atb/templatee/adha.template.base`
+`http://digitalhealth.gov.au/fhir/atb/template/adha.template.base`
 
 ## Changelog
 Refer to [changelog](CHANGELOG.md)
