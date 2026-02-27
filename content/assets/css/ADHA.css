@@ -384,3 +384,69 @@ body.framed .dev-portal-embed-hide {
 body.framed #dev-portal-footer {
   padding: 15px 0 10px 0;
 }
+
+/* ==========================================================================
+   Component Styles
+   ========================================================================== */
+
+/* Plain Language Description Section */
+.plain-language-description {
+  border: 1px solid var(--body-hyperlink-color);
+  border-radius: 8px;
+  background-color: #e9f4ff;
+  margin: 20px 0;
+  overflow: auto;
+  display: block;
+  width: 100%;
+}
+
+.plain-language-description summary {
+  background-color: #236c89;
+  color: var(--full-white);
+  padding: 10px 15px;
+  font-weight: 400;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  display: list-item;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+}
+
+.plain-language-description summary::-webkit-details-marker {
+  display: none;
+}
+
+.plain-language-description summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+.plain-language-description summary::marker {
+  display: none;
+}
+
+.plain-language-description summary::before {
+  content: "Plain Language Description";
+}
+
+.plain-language-description summary::after {
+  content: "Show";
+  float: right;
+}
+
+.plain-language-description[open] summary::after {
+  content: "Hide";
+}
+
+.plain-language-description .content {
+  padding: 15px;
+  line-height: 1.6;
+  background-color: inherit;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  clear: both;
+}

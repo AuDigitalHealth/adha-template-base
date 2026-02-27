@@ -1,0 +1,27 @@
+<!-- START PLAIN LANGUAGE DESCRIPTION -->
+
+    {% comment %}Define fallback text in case the markdown file is empty{% endcomment %}
+    {% assign fallback_text = "No plain language description provided." %}
+
+    {% comment %}Try to include the plain language markdown file{% endcomment %}
+    {% capture plain_lang_content %}{% include plain-language-description.md %}{% endcapture %}
+    
+    {% comment %}Remove any extra whitespace from the captured content{% endcomment %}
+    {% assign plain_lang_content = plain_lang_content | strip %}
+    
+    {% comment %}If file is empty or missing, provide fallback text{% endcomment %}
+    {% if plain_lang_content == "" or plain_lang_content == blank %}
+       {% assign plain_lang_content = fallback_text %}
+    {% endif %}
+
+      {% comment %}Display content in a collapsible details element{% endcomment %}
+      <div>
+        <details class="plain-language-description" closed>
+            <summary></summary>
+            <div class="content">
+            {{ plain_lang_content | markdownify }}
+            </div>
+        </details>
+      </div>
+
+<!-- END PLAIN LANGUAGE DESCRIPTION -->
