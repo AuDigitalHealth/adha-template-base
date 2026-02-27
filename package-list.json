@@ -1,7 +1,7 @@
 ﻿{
   "package-id": "adha.template.base",
   "title": "Base template for FHIR IGs published by the Australian Digital Health Agency",
-  "canonical": "http://ns.electronichealth.net.au/fhir/Template/adha.template.base",
+  "canonical": "http://digitalhealth.gov.au/fhir/atb/template/adha.template.base",
   "introduction": "This is the ADHA FHIR implementation guide template that adds Australian Digital Health Agency specific branding (like logo, colours, links).",
   "list": [
     {
@@ -10,6 +10,14 @@
       "path": "https://build.fhir.org/ig/AuDigitalHealth/adha.template.base",
       "status": "ci-build",
       "current": true
+    },
+    {
+      "version": "0.3.0",
+      "desc": "Introduced collapsible plain language description (PLD) section and updated ADHA.css file and updated license to CC-BY-4.0",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2026-03-02"
     },
     {
       "version": "0.2.0",
