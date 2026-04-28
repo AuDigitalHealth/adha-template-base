@@ -190,7 +190,7 @@ h6,
   color: var(--full-black) !important;
 }
 
-/* Styles for Developer Portal context */
+/* Styles for Implementer Hub context */
 
 .dev-portal * {
   font-family: Inter, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif !important;
@@ -365,7 +365,7 @@ h6,
   padding: 16px 0 32px 0;
 }
 
-/* Styles for embedded iFrame in Developer Portal context */
+/* Styles for embedded iFrame in Implementer Hub context */
 
 body.framed {
   border: 1px solid #ccc;
