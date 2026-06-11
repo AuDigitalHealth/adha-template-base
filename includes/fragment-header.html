@@ -12,7 +12,7 @@
       {% else %}
         {% assign status = site.data.fhir.ig.status %}
       {% endif %}
-      {{site.data.fhir.ig.version}} - {{status}}
+      {{site.data.fhir.ig.version}}
       {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
       {% for jurisdiction in site.data.resources[igId].jurisdictions %}
         {% if jurisdiction.flag %}
