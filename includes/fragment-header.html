@@ -11,7 +11,7 @@
       <!-- ADHA: Override base template subtitle behaviour: June 2026 
      - When releaselabel is blank, show only ig.version (suppresses the base template's ig.status fallback)
      - When releaselabel is set, show ig.version followed by releaselabel, separated by ' - ' -->
-      {{ site.data.fhir.ig.version }}{{ site.data.info.releaselabel | prepend: ' - ' if site.data.info.releaselabel != blank }}
+      {{ site.data.fhir.ig.version }}{% if site.data.info.releaselabel != "" %} - {{ site.data.info.releaselabel }}{% endif %}
       <!-- End ADHA override -->
 
       {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
