@@ -7,12 +7,13 @@
   <div id="ig-status">
     <h1>{{site.data.fhir.ig.title | escape_once}}</h1>
     <div id="subtitle">
-      {% if site.data.info.releaselabel != '' %}
-        {% assign status = site.data.info.releaselabel %}
-      {% else %}
-        {% assign status = site.data.fhir.ig.status %}
-      {% endif %}
-      {{site.data.fhir.ig.version}} - {{status}}
+
+      <!-- ADHA: Override base template subtitle behaviour: June 2026 
+     - When releaselabel is blank, show only ig.version (suppresses the base template's ig.status fallback)
+     - When releaselabel is set, show ig.version followed by releaselabel, separated by ' - ' -->
+      {{ site.data.fhir.ig.version }}{% if site.data.info.releaselabel != "" %} - {{ site.data.info.releaselabel }}{% endif %}
+      <!-- End ADHA override -->
+
       {% assign igId = site.data.fhir.ig.id | prepend: "ImplementationGuide/" %}
       {% for jurisdiction in site.data.resources[igId].jurisdictions %}
         {% if jurisdiction.flag %}
