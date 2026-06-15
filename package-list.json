@@ -12,6 +12,14 @@
       "current": true
     },
     {
+      "version": "0.3.2",
+      "desc": "Override subtitle behaviour: show ig.version only when releaselabel is blank, or ig.version - releaselabel when releaselabel is set",
+      "path": "https://github.com/AuDigitalHealth/adha.template.base",
+      "status": "draft",
+      "sequence": "Publications",
+      "date": "2026-06-15"
+    },
+    {
       "version": "0.3.1",
       "desc": "Updated links and references from the old ADHA 'Developer Portal' to the new 'Implementer Hub'",
       "path": "https://github.com/AuDigitalHealth/adha.template.base",
